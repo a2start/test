@@ -59,8 +59,11 @@
     "server": "node ./api/server.js",
     "client": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts eject",
     "eject": "react-scripts eject"
+
   },
   "eslintConfig": {
     "extends": [
